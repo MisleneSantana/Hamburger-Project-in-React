@@ -37,8 +37,15 @@ export const StyledCartTotal = styled.span`
     font-size: var(--text-default);
     font-weight: 600;
     color: var(--grey-50);
+
+    :hover{
+      background-color: var(--grey-50);
+      border: 2px solid var(--grey-50);
+      color: var(--white);
+    }
   }
 
   @media (min-width: 768px) {
+    margin: 0 0 1rem 0;
   }
 `;

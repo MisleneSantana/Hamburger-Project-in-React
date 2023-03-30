@@ -23,7 +23,12 @@ export const Product = ({ product, handleClick, setProducts }) => {
       <section>
         <h3>{`${product.name.substring(0, 10).trim()}`}</h3>
         <p>{product.category}</p>
-        <small>R$ {parseFloat(product.price).toFixed(2)}</small>
+        <small>
+          R${" "}
+          {Number(product.price).toLocaleString("pt-br", {
+            minimumFractionDigits: 2,
+          })}
+        </small>
         <button onClick={() => handleClickAndLoadProducts(product)}>
           Adicionar
         </button>

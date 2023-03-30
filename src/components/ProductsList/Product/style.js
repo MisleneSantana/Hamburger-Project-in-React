@@ -9,6 +9,10 @@ export const StyledProduct = styled.li`
   border-radius: 0.3125rem;
   border: 2px solid var(--grey-20);
 
+  :hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+
   div {
     display: flex;
     width: 15.625rem;
@@ -62,6 +66,11 @@ export const StyledProduct = styled.li`
       font-size: var(--text-14);
       font-weight: 600;
       color: var(--white-default);
+
+      :hover{
+        background-color: var(--color-primary-50);
+        border: 2px solid var(--color-primary-50);
+      }
     }
   }
 

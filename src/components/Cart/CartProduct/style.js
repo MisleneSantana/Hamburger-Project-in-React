@@ -47,7 +47,6 @@ export const StyledCartProduct = styled.li`
       }
 
       button {
-        // width: 25%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -57,6 +56,11 @@ export const StyledCartProduct = styled.li`
         font-weight: 500;
         line-height: 0.9375rem;
         color: var(--grey-30);
+
+        :hover{
+          color: var(--grey-100);
+        }
+
       }
     }
 
@@ -74,5 +78,9 @@ export const StyledCartProduct = styled.li`
     span > div > h3 {
       font-size: var(--text-14);
     }
+  }
+
+  span>div>h3{
+    font-size:var(--text-12);
   }
 `;
