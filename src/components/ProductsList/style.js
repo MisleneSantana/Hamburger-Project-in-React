@@ -11,7 +11,7 @@ export const StyledProductsList = styled.ul`
     flex-wrap: wrap;
     justify-content: flex-start;
     height: 49rem;
-    width: 300px;
+    width: 18.75rem;
   }
 
   @media (min-width: 800px) {

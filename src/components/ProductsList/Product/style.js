@@ -66,6 +66,7 @@ export const StyledProduct = styled.li`
       font-size: var(--text-14);
       font-weight: 600;
       color: var(--white-default);
+      cursor: pointer;
 
       :hover{
         background-color: var(--color-primary-50);

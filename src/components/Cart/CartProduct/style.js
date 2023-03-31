@@ -56,6 +56,7 @@ export const StyledCartProduct = styled.li`
         font-weight: 500;
         line-height: 0.9375rem;
         color: var(--grey-30);
+        cursor: pointer;
 
         :hover{
           color: var(--grey-100);
