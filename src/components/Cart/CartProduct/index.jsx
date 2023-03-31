@@ -4,7 +4,7 @@ export const CartProduct = ({ currentProduct, removeProductFromCart }) => {
       <div>
         <img src={currentProduct.img} alt={currentProduct.name}></img>
       </div>
-      <span className="cart_data">
+      <span>
         <div>
           <h3>{`${currentProduct.name.substring(0, 10).trim()}`}</h3>
           <button onClick={() => removeProductFromCart(currentProduct.id)}>

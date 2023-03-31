@@ -8,7 +8,7 @@ export const StyledCartTotal = styled.span`
   gap: 1rem;
   margin: 1rem 0;
 
-  .total_container {
+  div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

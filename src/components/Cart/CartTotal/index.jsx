@@ -10,10 +10,9 @@ export const CartTotal = ({ currentSale, removeAll }) => {
 
     return (
       <StyledCartTotal>
-        <div class="total_container">
+        <div>
           <h3>Total</h3>
           <small>R$ {total}</small>
-
         </div>
         <button onClick={() => removeAll()}>Remover todos</button>
       </StyledCartTotal>

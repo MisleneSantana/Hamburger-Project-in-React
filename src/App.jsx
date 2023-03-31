@@ -34,6 +34,7 @@ function App() {
       );
     });
     setProducts(filterProduct);
+    // console.log(filteredProducts);
   };
 
   const handleClick = (productId) => {
