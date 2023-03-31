@@ -18,7 +18,7 @@ export const StyledMainTemplate = styled.main`
     justify-content: center;
     align-items: center;
     height: 90%;
-    margin-top:3rem;
+    margin:3rem 0 1rem 0;
 
     div {
       width: 90%;
