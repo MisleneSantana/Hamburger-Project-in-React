@@ -34,6 +34,10 @@ export const StyledHeader = styled.header`
       border: 2px solid var(--grey-20);
       margin-bottom: 1rem;
 
+      :focus {
+        border: 2px solid var(--grey-100);
+      }
+
       input {
         width: 70%;
         height: 100%;
@@ -58,6 +62,7 @@ export const StyledHeader = styled.header`
         font-weight: 500;
         line-height: 1.0625rem;
         margin-right: 0.5rem;
+        cursor: pointer;
       }
     }
   }

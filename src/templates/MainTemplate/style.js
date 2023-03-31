@@ -17,7 +17,8 @@ export const StyledMainTemplate = styled.main`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 90%;
+    margin-top:3rem;
 
     div {
       width: 90%;

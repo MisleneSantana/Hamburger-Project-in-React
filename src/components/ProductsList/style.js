@@ -10,12 +10,13 @@ export const StyledProductsList = styled.ul`
     margin: 0;
     flex-wrap: wrap;
     justify-content: flex-start;
-    height: 49rem;
-    width: 18.75rem;
+    height: 45rem;
+    width: 21.875rem;
+
   }
 
   @media (min-width: 800px) {
-    width: 21.875rem;
+    width: 350px;
     // overflow-y: hidden;
   }
 
