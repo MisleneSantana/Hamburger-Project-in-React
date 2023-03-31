@@ -20,7 +20,7 @@ function App() {
         const response = await api.get("/products");
         setProducts(response.data);
       } catch (error) {
-        console.error(error);
+        toast.error(error);
       }
     }
     loadProducts();
@@ -67,12 +67,12 @@ function App() {
       <GlobalStyle />
       <ToastContainer position="bottom-right" />
       <StyledContainer>
-        <Header showProducts={showProducts} />
-        <MainTemplate>
+        <Header showProducts={showProducts}/>
+        <MainTemplate setProducts={setProducts}>
           <ProductsList
             products={products}
             handleClick={handleClick}
-            showProducts={showProducts}
+            // showProducts={showProducts}
             setProducts={setProducts}
           />
           <Cart

@@ -10,7 +10,7 @@ export const CartTotal = ({ currentSale, removeAll }) => {
 
     return (
       <StyledCartTotal>
-        <div>
+        <div className="total_value">
           <h3>Total</h3>
           <small>R$ {total}</small>
         </div>

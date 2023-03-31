@@ -34,8 +34,8 @@ export const StyledHeader = styled.header`
       border: 2px solid var(--grey-20);
       margin-bottom: 1rem;
 
-      :focus {
-        border: 2px solid var(--grey-100);
+      :hover {
+        border: 2px solid var(--color-primary);
       }
 
       input {
@@ -48,6 +48,10 @@ export const StyledHeader = styled.header`
         border: none;
         outline: none;
         padding-left: 0.5rem;
+
+        :focus{
+          color:var(--grey-100);
+        }
       }
 
       button {

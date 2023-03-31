@@ -9,7 +9,7 @@ export const Product = ({ product, handleClick, setProducts }) => {
         const response = await api.get("/products");
         setProducts(response.data); //Atualiza o state
       } catch (error) {
-        console.error(error);
+        console.log(error);
       }
     };
     loadProducts();
