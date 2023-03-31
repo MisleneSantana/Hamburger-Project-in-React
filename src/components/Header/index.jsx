@@ -1,14 +1,9 @@
 import { useState } from "react";
 import logo from "../../assets/img/logo.svg";
 import { StyledHeader } from "./style";
-import { useEffect } from "react";
 
 export const Header = ({ showProducts }) => {
   const [filteredProducts, setFilteredProducts] = useState([]);
-
-  // useEffect(() => {
-  //   console.log("Oi");
-  // }, [{ useState }]);
 
   const submit = (event) => {
     event.preventDefault();
@@ -33,7 +28,6 @@ export const Header = ({ showProducts }) => {
           </form>
         </div>
       </StyledHeader>
-      {filteredProducts ? <h1>Resultados para: {filteredProducts}</h1> : null}
     </>
   );
 };
