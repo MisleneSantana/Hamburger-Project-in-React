@@ -74,7 +74,7 @@ export const StyledCartProduct = styled.li`
   }
 
   @media (max-width: 320px) {
-    width: 18.75rem;
+    // width: 18.75rem;
 
     span > div > h3 {
       font-size: var(--text-14);
