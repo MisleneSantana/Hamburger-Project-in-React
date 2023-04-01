@@ -6,7 +6,7 @@ export const StyledCartTotal = styled.span`
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  margin: 1rem 0;
+  margin: 0 0 1rem 0;
 
   .total_value {
     display: flex;
@@ -38,7 +38,7 @@ export const StyledCartTotal = styled.span`
     font-weight: 600;
     color: var(--grey-50);
 
-    :hover{
+    :hover {
       background-color: var(--grey-50);
       border: 2px solid var(--grey-50);
       color: var(--white);

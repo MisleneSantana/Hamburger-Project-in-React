@@ -68,7 +68,7 @@ export const StyledCart = styled.section`
 
     div>ul {
     gap:0.5rem;
-    padding: 1rem 0 1rem 0;
+    padding: 0 0 1rem 0;
     }
   }
 `;

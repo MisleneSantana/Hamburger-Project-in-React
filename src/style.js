@@ -6,6 +6,7 @@ export const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
+  align-items: center;
   
 
   @media (min-width: 768px){

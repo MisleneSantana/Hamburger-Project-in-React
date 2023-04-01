@@ -35,7 +35,7 @@ export const StyledHeader = styled.header`
       margin-bottom: 1rem;
 
       :hover {
-        border: 2px solid var(--color-primary);
+        border: 2px solid var(--black--fonts);
       }
 
       input {
@@ -50,7 +50,7 @@ export const StyledHeader = styled.header`
         padding-left: 0.5rem;
 
         :focus{
-          color:var(--grey-100);
+          color:var(--grey-50);
         }
       }
 

@@ -3,16 +3,14 @@ import styled from "styled-components";
 export const StyledModalFilter = styled.section`
   display: flex;
     align-items: center;
-    justify-content: center;
-    height: 1rem;
-    width:100vw;
-    margin-top:1rem;
+    width: 90%;
+    margin-top: 1rem;
 
     div{
         display: flex;
-        align-items: center;
+        flex-direction: row;
         justify-content: space-between;
-        width: 90%;
+        width: 100%;
 
         h2{
             font-size:var(--text-14);
@@ -34,7 +32,7 @@ export const StyledModalFilter = styled.section`
 
     @media (min-width: 768px) {
 
-        height: 3rem;
+        margin-top: 0;
 
         div{
 

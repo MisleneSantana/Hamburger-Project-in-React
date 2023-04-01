@@ -14,16 +14,17 @@ export const StyledMainTemplate = styled.main`
   }
 
   @media (min-width: 768px) {
-    flex-direction: row;
+    // flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 90%;
     margin:2rem 0;
+    gap: 1rem;
 
     div {
       width: 90%;
       flex-direction: row;
-      justify-content: space-between;
+      // justify-content: space-between;
     }
   }
 `;

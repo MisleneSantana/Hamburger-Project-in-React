@@ -9,7 +9,7 @@ export const StyledProduct = styled.li`
   border-radius: 0.3125rem;
   border: 2px solid var(--grey-20);
 
-  :hover{
+  :hover {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   }
 
@@ -68,7 +68,7 @@ export const StyledProduct = styled.li`
       color: var(--white-default);
       cursor: pointer;
 
-      :hover{
+      :hover {
         background-color: var(--color-primary-50);
         border: 2px solid var(--color-primary-50);
       }
@@ -76,66 +76,85 @@ export const StyledProduct = styled.li`
   }
 
   @media (min-width: 800px) {
-    div{
+    div {
       width: 300px;
     }
   }
 
-  @media (min-width: 900px){
-    div{
-      width: 9.375rem;
-      img{
-        height: 9.375rem;
+  @media (min-width: 900px) {
+    div {
+      width: 230px;
+      img {
+        height: 140px;
+      }
+    }
+
+    section {
+      h3 {
+        font-size: var(--text-18);
       }
     }
   }
 
-  @media (min-width: 1000px){
-    div{
-      width: 11.25rem;
-      img{
+  @media (min-width: 1000px) {
+    div {
+      width: 185px;
+      img {
         height: 10rem;
       }
     }
+
+    section {
+      h3 {
+        font-size: var(--text-14);
+      }
+    }
   }
 
-  @media (min-width: 1050px){
-    div{
+  @media (min-width: 1050px) {
+    div {
       width: 11.875rem;
-      img{
+      img {
         height: 10rem;
       }
     }
   }
 
-  @media (min-width: 1100px){
-    div{
+  @media (min-width: 1100px) {
+    div {
       width: 12.5rem;
-      img{
+      img {
         height: 10rem;
       }
     }
-
-    @media (min-width: 1300px){
-      div{
-        width: 15.625rem;
-        img{
-          height: 10rem;
-        }
-      }
-
-      @media (min-width: 1400px){
-        div{
-          width: 17.1875rem;
-          img{
-            height: 10rem;
-          }
-        }
-
-        @media (min-width: 1500px){
-          div{
-            width: 18.75rem;
-          }
   }
 
+  @media (min-width: 1300px) {
+    div {
+      width: 15.625rem;
+      img {
+        height: 10rem;
+      }
+    }
+    section {
+      h3 {
+        font-size: var(--text-18);
+      }
+    }
+  }
+
+  @media (min-width: 1400px) {
+    div {
+      width: 17.1875rem;
+      img {
+        height: 10rem;
+      }
+    }
+  }
+
+  @media (min-width: 1500px) {
+    div {
+      width: 18.75rem;
+    }
+  }
 `;

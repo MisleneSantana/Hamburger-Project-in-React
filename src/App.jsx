@@ -13,6 +13,7 @@ import { Cart } from "./components/Cart/index";
 function App() {
   const [products, setProducts] = useState([]);
   const [currentSale, setCurrentSale] = useState([]);
+  const [filteredProductsResult, setFilteredProductsResult] = useState(""); // Cópia do state original(filter) usado para renderizar resultados de busca em tela
   const [isFiltered, setIsFiltered] = useState(false); //Alternar o modal com o resultado de filter
 
   useEffect(() => {
@@ -71,10 +72,17 @@ function App() {
         <Header
           showProducts={showProducts}
           setProducts={setProducts}
+          filteredProductsResult={filteredProductsResult}
+          setFilteredProductsResult={setFilteredProductsResult}
           isFiltered={isFiltered}
           setIsFiltered={setIsFiltered}
         />
-        <MainTemplate>
+        <MainTemplate
+          setProducts={setProducts}
+          filteredProductsResult={filteredProductsResult}
+          isFiltered={isFiltered}
+          setIsFiltered={setIsFiltered}
+        >
           <ProductsList
             products={products}
             handleClick={handleClick}
