@@ -77,8 +77,7 @@ export const StyledProduct = styled.li`
 
   @media (min-width: 800px) {
     div{
-      width: 18.75rem;
-    
+      width: 300px;
     }
   }
 

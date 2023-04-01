@@ -1,7 +1,13 @@
 import { api } from "../../../services/api";
 
-export const Product = ({ product, handleClick, setProducts }) => {
+export const Product = ({
+  product,
+  handleClick,
+  setProducts,
+  setIsFiltered,
+}) => {
   const handleClickAndLoadProducts = (product) => {
+    setIsFiltered(false); //Limpa o modal com o resultado de busca
     handleClick(product.id);
 
     const loadProducts = async () => {
@@ -21,7 +27,7 @@ export const Product = ({ product, handleClick, setProducts }) => {
         <img src={product.img} alt={product.name} />
       </div>
       <section>
-        <h3>{`${product.name.substring(0, 10).trim()}`}</h3>
+        <h3>{product.name}</h3>
         <p>{product.category}</p>
         <small>
           R${" "}

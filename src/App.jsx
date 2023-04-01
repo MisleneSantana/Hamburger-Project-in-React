@@ -13,6 +13,7 @@ import { Cart } from "./components/Cart/index";
 function App() {
   const [products, setProducts] = useState([]);
   const [currentSale, setCurrentSale] = useState([]);
+  const [isFiltered, setIsFiltered] = useState(false); //Alternar o modal com o resultado de filter
 
   useEffect(() => {
     async function loadProducts() {
@@ -67,13 +68,18 @@ function App() {
       <GlobalStyle />
       <ToastContainer position="bottom-right" />
       <StyledContainer>
-        <Header showProducts={showProducts}/>
-        <MainTemplate setProducts={setProducts}>
+        <Header
+          showProducts={showProducts}
+          setProducts={setProducts}
+          isFiltered={isFiltered}
+          setIsFiltered={setIsFiltered}
+        />
+        <MainTemplate>
           <ProductsList
             products={products}
             handleClick={handleClick}
-            // showProducts={showProducts}
             setProducts={setProducts}
+            setIsFiltered={setIsFiltered}
           />
           <Cart
             currentSale={currentSale}

@@ -2,7 +2,13 @@ import { Product } from "./Product";
 import { StyledProductsList } from "./style";
 import { StyledProduct } from "./Product/style";
 
-export const ProductsList = ({ products, handleClick, setProducts }) => {
+export const ProductsList = ({
+  products,
+  handleClick,
+  setProducts,
+  setIsFiltered
+}) => {
+
   return (
     <>
       <StyledProductsList>
@@ -12,6 +18,7 @@ export const ProductsList = ({ products, handleClick, setProducts }) => {
               product={product}
               handleClick={handleClick}
               setProducts={setProducts}
+              setIsFiltered={setIsFiltered}
             />
           </StyledProduct>
         ))}
